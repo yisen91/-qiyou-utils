@@ -1,3 +1,3 @@
-import { interact } from "./utils/interact";
+import { interact } from './utils/interact'
 
 export { interact }
