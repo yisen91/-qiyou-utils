@@ -1,7 +1,7 @@
 {
   "name": "qy-utils",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "scripts": {
     "dev": "tsup --watch",
@@ -29,6 +29,7 @@
     "@minko-fe/eslint-config-ts": "^1.2.32",
     "@minko-fe/tsconfig": "^1.2.32",
     "@types/node": "^20.3.2",
+    "bumpp": "^9.2.0",
     "conventional-changelog-cli": "^3.0.0",
     "eslint": "^8.43.0",
     "ts-node": "^10.9.1",

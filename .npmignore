@@ -1,0 +1,8 @@
+# 排除所有文件和目录
+*
+
+# 但是包括 dist 目录
+!dist/
+!package.json
+!README.md
+!CHANGELOG.md
