@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { interact } from 'qy-utils'
+import { checkScriptsLoadStatus, interact } from 'qy-utils'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +10,30 @@ function App() {
   useEffect(() => {
     console.log(1)
     interact.loadComplete()
+    // const scriptUrl = "https://example.com/script.js";
+    // checkScriptLoadStatus(scriptUrl, (error) => {
+    //   if (error) {
+    //     console.log(123)
+    //     console.log('网络异常')
+    //     // 处理脚本加载异常的情况
+    //   } else {
+    //     console.log("Script loaded successfully");
+    //     // 处理脚本加载成功的情况
+    //   }
+    // });
+    checkScriptsLoadStatus({
+      scriptUrls: [
+        'https://example.com/script.js',
+        'https://github.githubassets.com/assets/github-elements-1ff8b48eef26.js'
+      ],
+      callback: (error) => {
+        if (error) {
+          console.log('网络异常')
+        } else {
+          console.log("Script loaded successfully");
+        }
+      }
+    })
   }, [])
 
   return (
