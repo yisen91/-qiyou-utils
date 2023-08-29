@@ -1,4 +1,8 @@
-## 0.0.3 (2023-08-29)
+## [0.0.4-beta.0](https://github.com/yisen91/qy-utils/compare/v0.0.3...v0.0.4-beta.0) (2023-08-29)
+
+
+
+## [0.0.3](https://github.com/yisen91/qy-utils/compare/7c46eb4b45159f53a22d7288286b8b2bbf6bafd2...v0.0.3) (2023-08-29)
 
 
 ### Features
